@@ -64,21 +64,6 @@ $db['local']['swap_pre'] = '';
 $db['local']['autoinit'] = TRUE;
 $db['local']['stricton'] = FALSE;
 
-$db['hostinger']['hostname'] = 'mysql.hostinger.es';
-$db['hostinger']['username'] = 'u100348340_root';
-$db['hostinger']['password'] = 'Federico1918';
-$db['hostinger']['database'] = 'u100348340_fedea';
-$db['hostinger']['dbdriver'] = 'mysql';
-$db['hostinger']['dbprefix'] = '';
-$db['hostinger']['pconnect'] = FALSE;
-$db['hostinger']['db_debug'] = TRUE;
-$db['hostinger']['cache_on'] = FALSE;
-$db['hostinger']['cachedir'] = '';
-$db['hostinger']['char_set'] = 'utf8';
-$db['hostinger']['dbcollat'] = 'utf8_general_ci';
-$db['hostinger']['swap_pre'] = '';
-$db['hostinger']['autoinit'] = TRUE;
-$db['hostinger']['stricton'] = FALSE;
 
 
 /* End of file database.php */
