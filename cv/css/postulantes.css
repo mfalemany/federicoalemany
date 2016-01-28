@@ -1,0 +1,437 @@
+/*ESTILOS GENERALES*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+
+* {margin: 0}
+html, body {height: 100%}
+#wrap {min-height: 60%}
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;vertical-align: baseline}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block}
+body {line-height: 1; background:#b8b8b8; font:300 15px/20px 'Roboto', sans-serif;min-height: 100%; color:#333}
+ol, ul {list-style: none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content: '';	content: none}
+input[type="text"], input[type="password"], input[type="email"], input[placeholder="Usuario"], select, textarea {padding: 10px 15px!important;border: 1px solid #b8b8b8!important;border-radius: 5px!important;font-size: 15px!important;color: #333; font:300 15px/20px 'Roboto', sans-serif}
+select { height:42px}
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {border-color: rgba(184,184,184,0.8);outline: 0;outline: thin dotted \9;-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(184,184,184,0.6);-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(184,184,184,0.6);box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(184,184,184,0.6)}
+.radio input[type="radio"], .checkbox input[type="checkbox"] { border:0!important; margin-top:5px\9}
+input[type='radio'], input[type='checkbox'] { border:0!important;padding:0}
+input[type="radio"]:focus, button:focus {outline:0}
+table {border-collapse: collapse;border-spacing: 0}
+h1, h2, h3, h4, h5, h6 {font-family: 'Roboto Slab', serif; font-weight:400!important; color: #1e3f7e; margin:0}
+h1 {font-size:34px; line-height:39px}
+h2 {font-size:32px; line-height:37px; margin-bottom: 20px!important}
+h3 {font-size:25px; line-height:30px}
+h4 {font-size:21px; line-height:30px; color: #666}
+h5 {font-size:16px; line-height:25px; color: #666}
+h3.ocre {color:#b07c06}
+
+label { color:#666; font-weight:300; font-size:17px; display:block; cursor: default}
+p { font-size:15px; line-height:20px}
+a {color:#3874e8; text-decoration:none;cursor: pointer}
+a:hover { color:#3874e8; text-decoration:underline}
+.container{min-width:990px; padding:40px 10px 10px; background:#fff}
+.visible{display:block}
+.oculto{display:none}
+input:-webkit-autofill, input:focus:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px white inset}
+input:focus, select:focus {outline:0px;box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(184,184,184,0.6); border-color: rgba(184,184,184,0.8);}
+.navegacion { width:100%; font-size:13px}
+
+.row-fluid .span10 { width:80%;margin-left: 4%}
+.row-fluid .span2.botones {width: 17%}
+
+/* Banners */
+.banner950x50 {width: 950px;min-height: 1px;display: block;margin: 0 auto 10px}
+.banner300x250 {width: 300px;height: 250px;float: right}
+
+/* Tablas*/
+table {*border-collapse: collapse; /* IE7 and lower */border-spacing: 0}
+th:first-child {-moz-border-radius: 6px 0 0 0;-webkit-border-radius: 6px 0 0 0;border-radius: 6px 0 0 0}
+th:last-child {-moz-border-radius: 0 6px 0 0;-webkit-border-radius: 0 6px 0 0;border-radius: 0 6px 0 0}
+tbody>tr:nth-child(odd)>td, tbody>tr:nth-child(odd)>th {background-color:#fff!important; border-top:0!important;vertical-align:top}
+tbody>tr:nth-child(even)>td, tbody>tr:nth-child(even)>th{background-color: #b8b8b8!important; border-top:0!important;vertical-align:top}
+.misPostulaciones .tablaPostulaciones tr th, .misCartas .cartasPresentacion tr th{background:#666;padding: 12px; color: #fff; border:0; font-weight:300; font-size:18px}
+.misPostulaciones .tablaPostulaciones tbody tr, .misCartas .cartasPresentacion tbody tr {border-left: 1px solid #b8b8b8;border-right: 1px solid #b8b8b8}
+.misPostulaciones table, .misCartas table  { border-bottom:1px solid #b8b8b8}
+
+/*Botones*/
+.boton, input[type="button"], input[type="submit"] { height:auto; width:auto; border-radius: 5px; border:0!important; cursor:pointer; padding:10px 12px; background: #1e3f7e; color:#fff;font:400 15px/20px 'Roboto', sans-serif}
+.boton:hover { background: #88acf1; text-decoration:none; color: #fff}
+.boton.inactive {background:#d7e3fa; color:#fff; cursor:auto}
+.boton.inactive:hover, .boton.disabled:hover {text-decoration:none}
+.boton.disabled {background:#b8b8b8; color:#fff; cursor:auto}
+.boton i.next, .boton i.prev, i.obligatorio {display: inline-block;height: 18px;width: 11px;position: relative;top: 4px}
+.boton i.next {background-position: 0 0}
+.boton i.prev {background-position: -11px 0!important}
+.botonSlide {padding: 40px 15px;display: inline-block}
+.botonCuadrado {padding: 8px 15px 14px;display: inline-block}
+.boton[disabled] {cursor: default; background: #b8b8b8}
+
+/*forms*/
+.form228 { width:228px!important}
+.form250 { width:250px}
+input[type="text"], input[type="password"] {width:288px}
+select.inputS{width:90px}
+select.inputSM{width:140px}
+select.inputM{width:208px}
+select.inputL{width:250px}
+select.inputXL, select {width:320px}
+select.inputXXL {width:380px}
+input.inputXL {width:349px}
+input.inputL{width:290px}
+input.inputM{width:250px}
+
+/*iconos*/
+.cerrar, .icoError, .icoflechaAzul, .boton i.next, .boton i.prev, i.obligatorio, .icoAlerta, .icoOk, .icoOkBlco, .icoSmile,.alerta i.alertaIcono, .alerta .alertIco, .rojo, .recuperarContrasenia i.alertaIcono, a.tooltips span div.piquito, .inputTooltip div.piquito, i.icoDelete {background: url("../img/sp_postulantes.png") no-repeat}
+.cerrar {background-position:-45px 0; height:13px; width: 13px; float:right; position: relative;top: -1px; cursor: pointer}
+.icoError {background-position: -24px -70px;display: inline-block;height: 21px;width: 23px;position: relative;top: 5px;margin-right: 5px}
+.icoflechaAzul {background-position: -96px 0;display: inline-block;height: 18px;width: 11px;position: relative;top: 4px}
+.icoAlerta {background-position: 3px -16px;display: inline-block;height: 29px;width: 26px;position: relative;top: 4px}
+.icoSmile {background-position: -48px -53px;display: inline-block;height: 42px;width: 41px; float:left}
+.icoOk, .icoOkBlco {background-position: 2px -47px;display: inline-block;height: 21px;width: 23px;position: relative;top: 9px;margin-right: 5px}
+.icoOkBlco {background-position: -25px -46px}
+.boton .icoOk {background-position: -25px -46px; margin-top: -14px;margin-right: 5px}
+.alert-success .cerrar {background-position:-65px 0}
+.boton .icoOk { margin:0}
+.alerta .icoAlerta { height: 28px;width: 35px;background-position: -47px -24px;display: inline-block;margin: 0 5px 0 0;position: relative;top: 8px}
+.alerta .cerrar { background-position: -80px 0}
+.miCurriculum #otroConocimientoItems .alertaLinea, .miCurriculum #informaticaItems .alertaLinea { margin-bottom:20px}
+i.icoDelete {cursor: pointer;height:16px; width:16px;display: inline-block;background-position:-79px 0;position: relative;top: 4px; margin-right:5px}
+
+/* Obligatorio */
+.rojo {display: inline-block!important;height: 18px;width: 18px;margin-left: 5px;background-position: -27px 0; vertical-align: top}
+
+/* Errores - Alertas - Ok */
+.fail {color: #8b3213;margin-bottom: 15px}
+.error, .msjInvalido, #recaptcha_response_field_error {font-size: 12px;font-weight: 500;display: block;color: #8b3213}
+input.error , select.error, textarea.error {border-color: #8b3213!important}
+.alerta h2, .alerta p, .ok h2, .ok p, .error h2, .error p, .recuperarContrasenia .alerta h3 {margin-left: 40px}
+.alert i {display:inline-block;vertical-align: middle;margin-right: 10px; margin-top:-5px}
+.alerta h2, .recuperarContrasenia .alerta h3 {color: #8b3213; margin-bottom: 5px!important}
+.alerta i.alertaIcono, .recuperarContrasenia i.alertaIcono {background-position:-50px -24px;display: inline-block;height: 28px;width: 31px;position: absolute; top: 20px}
+.alertaLinea span {color: #8b3213;position: relative;top: -2px}
+.alerta button {border: 0;position: relative;top: -4px;cursor: pointer}
+.alerta {border-radius: 5px;min-height: 25px;width: 96%;padding: 15px; background: #fff; border:2px solid #8b3213;margin-bottom: 25px;position: relative;color: #8b3213}
+.alerta h5 { color:#8b3213; font-size:18px;margin-bottom: 10px; float: left;width: 600px}
+.alerta button.boton {right: -20px;top: 0}
+.ok {background: #1d3d02; color:#fff; padding:25px;border-radius: 5px;margin: 25px 0}
+.ok p {font-size:18px;margin-top: -15px}
+.welcome.ok { padding-bottom:0}
+.welcome.ok h3 {color: #527535;position: relative;margin-left: 40px;top: -25px}
+.welcome .icoOk {top:3px}
+.welcome.ok .icoOk {top:7px}
+.alertaRoja {background: #8b3213;border-radius: 5px;display: inline-block;width: 100%;padding: 15px 0;margin-bottom: 25px}
+.alertaRoja h5 {color: #fff;margin-left: 15px}
+.alertaRoja .icoError {margin-right: 5px}
+.alertaRoja .icoError {background-position: 0 -70px}
+.alerta.amarillo {background: #f1d987; border:0;padding-top: 8px}
+
+/* Tooltip Blanco */
+a.tooltips {position: relative;display: inline}
+a.tooltips span {visibility: hidden; position: absolute;opacity:0;-moz-transition: opacity 1s ease;-webkit-transition: opacity 1s ease;-o-transition:opacity 1s ease;transition: opacity 1s ease}
+a.tooltips span div.contenido {position: absolute; width:200px; background: #FFF; border-radius: 5px; padding: 15px; color: #333; border: 1px solid #b8b8b8; margin-left: 9px; font-size: 13px; word-break: break-word }
+a.tooltips span div.piquito { width: 13px;height: 28px;position: absolute;top: 20px;left: -3px;z-index: 25;background-position:-90px -72px}
+a:hover.tooltips span {visibility: visible;left: 100%;top: -20px;z-index: 999; opacity:1}
+a.tooltips span div.contenido strong { color:#8b3213; font-weight:400;display: block}
+/* Tooltip gris */
+.inputTooltip{visibility: hidden; opacity:0;-moz-transition: opacity 1s ease;-webkit-transition: opacity 1s ease;-o-transition:opacity 1s ease;transition: opacity 1s ease}
+.controls input:focus + .inputTooltip {visibility: visible;position: absolute; left:450px; top:165px; opacity:1;z-index: 999}
+.inputTooltip div.contenido {position: absolute; width:150px; background: #eee; border-radius: 5px; padding:15px; color:#333; border:1px solid #b8b8b8; margin-left: 9px; top:-25px;font-size: 13px}
+.inputTooltip div.piquito { width: 13px;height: 28px;position: absolute;top: 20px;left: -3px;z-index: 25;background-position:-107px -72px}
+
+/* Welcome */
+.welcome { background: #d4dccd; padding:25px;position: relative; border-radius: 5px;margin: 25px 0}
+.welcome p{ color:#527535; width: 70%;margin-left: 55px}
+.welcome h4 { font-size:21px; color:#527535; width: 70%;margin: 0 55px}
+.welcome .cerrar {top: -11px;right: -11px; background-position:-108px 0}
+.welcome .boton {position: absolute;right: 34px;top: 38px}
+
+/* Actualización Reciente */
+.actualizacionReciente p {width:90%}
+
+/*Mi cuenta - sin Postulaciones */
+#noRealizoPostulacion { width:90%}
+
+/*Menú lateral*/
+.menuLateral{width:160px}
+.nav li a {font-size:14px; line-height:20px}
+.nav .active{position:relative}
+.nav a i{top:1px}
+.nav a{position:relative;left:-3px; color:#1e3f7e}
+.nav-pills i{float:right}
+.nav-pills>.active>a, .nav-pills>.active>a:hover, .nav-pills>.active>a:focus {background: #1e3f7e}
+.nav>li>a:hover, .nav>li>a:focus {background: #eee}
+.nav-pills>li>a {padding:12px}
+.active .icoflechaAzul { background-position:0 0}
+.progress { margin:15px 0 0}
+
+/* Mi cuenta datos*/
+.miCuenta .well.datosCuenta{padding:0;border: 0;background: #eee;box-shadow: none}
+.miCuenta .datosCuenta a,.datosCuenta .colNombre span{display:block}
+.miCuenta .datosCuenta a.boton{display: inline}
+.miCuenta .datosCuenta.well .contFlotado{padding:15px; position:relative}
+.miCuenta .datosCuenta.well .contFlotado h3{ float: left}
+.miCuenta .fecha{font-size:13px; margin-top: 10px}
+.miCuenta .fecha span, .miCuenta .datosCuenta.well .contFlotado.estadoCv .confidencialidad span { font-weight:500}
+.miCuenta .confidencialidad a{display:inline}
+.miCuenta .confidencialidad {margin-bottom:25px}
+.miCuenta .datosCuenta.well .contFlotado i.icon-pencil{margin-top:5px}
+.miCuenta .datosCuenta.well .contFlotado .tooltipalerta .icoAlerta { float:left;height: 24px;background-position: 3px -22px}
+.miCuenta .datosCuenta.well .contFlotado .alertTooltip {margin-left: 25px}
+.miCuenta .datosCuenta.well .contFlotado .colNombre{width:330px;word-wrap: break-word;word-break: break-word;margin-right: 20px; min-height:180px;float: left}
+.miCuenta .datosCuenta.well .contFlotado.estadoCv {padding:0; width:240px; float: left}
+.miCuenta .datosCuenta.well .contFlotado.estadoCv .cvCompleto {padding:5px 0}
+.miCuenta .datosCuenta.well .contFlotado.estadoCv .progress{margin-bottom: 10px; height:40px}
+.miCuenta .datosCuenta.well .contFlotado.estadoCv .text-center { margin-bottom:25px}
+.miCuenta .datosCuenta.well .contFlotado #emailDatoPersonal {margin-top: 4px}
+.miCuenta .datosCuenta.well .contFlotado a.tooltips.tooltipalerta { position: absolute}
+
+/* Mi cuenta - Acciones rápidas */
+.miCuenta .cajaAcciones {margin-bottom: 20px}
+.miCuenta .cajaAcciones .text-center { margin:20px 0}
+.miCuenta ul.quickActions { margin-bottom:30px}
+.miCuenta ul.quickActions li {margin:10px 0}
+.miCuenta ul.quickActions li i, .miCuenta .datosCuenta.well .contFlotado .accionesFoto i.icon-question, .miCv .datosCuenta.well .accionesFoto i.icon-question  { background:url("../img/sp_quickActions.png") no-repeat;display: inline-block;height: 18px;width: 20px;position: relative;top: 2px;margin-right: 5px}
+.miCuenta ul.quickActions li i.icoUser{background-position: -4px -3px}
+.miCuenta ul.quickActions li i.icoKey{background-position: -5px -24px}
+.miCuenta ul.quickActions li i.icoPref{background-position: -5px -45px}
+.miCuenta ul.quickActions li i.icoAdmin{background-position: -5px -63px}
+
+/* Mi cuenta - Habilitar empresas */
+.miCuenta div.habilitarEmpresas {margin-bottom:10px}
+.miCuenta div.habilitarEmpresas h5 { margin-bottom:25px}
+.miCuenta div.habilitarEmpresas label { font-size:15px;display: inline-block;width: 100%}
+.miCuenta div.habilitarEmpresas label p { float: left; width:80%; display: block}
+.miCuenta div.habilitarEmpresas input[type="checkbox"] {margin: 4px 5px 0 0; float:left}
+
+/* Mi Cuenta - Avisos Recomendados*/
+.miCuenta .avisosRecomendados {width:490px;border: 1px solid #eee;box-shadow: 0 0 4px #b8b8b8; padding:10px 10px 0; margin-left:0}
+.miCuenta .avisosRecomendados h3 { margin-bottom:15px; font-size:20px}
+.miCuenta .avisosRecomendados .aviso h2 {font-size:18px;line-height: 21px;margin:0 0 5px!important}
+.miCuenta .avisosRecomendados .aviso h2:first-letter {text-transform:uppercase}
+.miCuenta .avisosRecomendados .aviso {border-top:1px solid #b8b8b8;padding: 10px 0; display: block}
+.miCuenta .avisosRecomendados .aviso .lateralAviso span.avisoNuevo {color: #8b3213;font-weight: 500}
+.miCuenta .avisosRecomendados .aviso .lateralAviso {font-size:13px;margin-bottom: 5px!important}
+.miCuenta .avisosRecomendados .aviso .contenidoAviso p {margin-bottom:15px}
+
+/* Completitud */
+.miCuenta .datosCuenta.well .contFlotado.estadoCv .cvCompleto p {font-family: 'Roboto Slab', serif; font-weight:300; font-size:16px}
+.miCuenta .datosCuenta.well .contFlotado.estadoCv .cvCompleto p b  {font-weight:500!important; color:#1e3f7e}
+.progress {border: 1px solid #ccc; background: #fff}
+.progress .bar, .progress .bar.full { background-color: #527535}
+.progress .bar.red { background-color:  #8b3213}
+.progress .bar.yellow { background-color: #eba608}
+ 
+/* Mi Cv - Mi cuenta foto*/
+.colFoto,.colNombre{float:left}
+.colFoto img{width:175px}
+.colFoto{width:175px;margin-right: 12px}
+.colFoto .subiFoto{float:left;margin-top: 6px}
+.fileinput-foto {overflow: hidden;position: relative;overflow: hidden;opacity: 1;filter: alpha(opacity = 100);width: 150px; border-radius:5px; background: #fff;border: solid 1px #b8b8b8}
+.fileinput-foto input {cursor: pointer;direction: ltr;margin: 0;position: absolute;display: block;opacity: 0;filter: alpha(opacity = 0);right: 0;top: 0;height: 149px;width: 149px}
+.contFlotado .accionesFoto { position: absolute; bottom: 50px}
+.miCv .accionesFoto {position: absolute; top: 164px}
+.contFlotado .accionesFoto li, .miCv .accionesFoto li  { float:left}
+.miCuenta .datosCuenta.well .contFlotado .accionesFoto i, .miCv .datosCuenta.well .accionesFoto i {margin: 5px 2px}
+.miCuenta .datosCuenta.well .contFlotado .accionesFoto i.icon-question, .miCv .datosCuenta.well .accionesFoto i.icon-question { background-position:-8px -82px; margin:0}
+
+/* Acciones Foto - Ocultar boton */
+input#pencilEditarFoto{cursor: pointer;position: absolute;display: block; opacity: 0;filter: alpha(opacity = 0);width: 18px; width: 125px;top: 0;left: -109px}
+
+/* Mi Cv - generales*/
+.miCv .colNombre{width: 270px;margin-right: 10px}
+.miCuenta .colNombre h4 {width:330px;overflow: hidden;max-height: 120px}
+.miCuenta .colNombre a, .miCurriculum .colNombre a {word-break: break-all}
+.miCv .curriculum h3{float:left}
+.miCv .curriculum .contHeader{margin-top: 20px;margin-bottom: 6px}
+.miCv .contHeader a { font-size:13px; margin-top: 9px}
+.miCv .row-fluid .span9 { width:100%}
+.miCv .text-center {margin-bottom:20px}
+.miCv .text-center a { margin-left:15px}
+.miCv .generarCv{float:left; font-size: 13px}
+.miCv .colNombre .icoAlerta {top: 8px}
+.miCurriculum .formCV .control-group{margin-bottom: 12px}
+.miCurriculum .formCV select.input-large {width:431px}
+.miCurriculum .formCV .input-medium{width:200px}
+.miCurriculum .formCV .input-small{width:100px}
+.form-horizontal .aclaracion{font-size: 11px; color:#666;line-height: 16px}
+.form-horizontal .aclaracion br { line-height:5px}
+.miCurriculum .headItem .fecha{float:right}
+.miCurriculum .headItem .puesto{float:left;max-width: 620px; word-wrap: break-word; font:18px 'Roboto Slab', serif; color:#1e3f7e}
+.miCurriculum .headItem .puesto:first-letter {text-transform:uppercase}
+.miCurriculum .headItem{padding: 8px 12px 0;background: #fff}
+.miCurriculum .detalleItem li{list-style: none;float:left;border-left:1px solid #666;padding:0 8px}
+.miCurriculum .cuerpoItem{padding:8px 4px 4px 12px; background: #fff}
+.miCurriculum .well{box-shadow:0 0 4px #b8b8b8}
+.miCv .itemCv{padding:0!important;border:0;margin-bottom: 8px; border:1px solid #eee}
+.miCurriculum .formCV { margin-bottom:40px}
+.miCurriculum .cuerpoItem p{ word-wrap:break-word}
+.miCurriculum .detalleItem li:first-child{border-left:none;padding-left:0}
+.row-fluid .span12 {margin-left: 2.127659574468085%!important}
+.limiteScroll{max-width:86%;max-height: 500px}
+.miCurriculum .well.cvCompleto{box-shadow:none}
+.separadorTopPunteado{border-top:1px dashed #d7d7d7;padding-top:18px;margin-top:28px; width:80%}
+.tablaBoton{float:right}
+.tablaBoton .btn{padding:3px 6px!important;margin-right: 6px}
+
+/* Mi CV - links superiores */
+.miCv ul.opciones{margin:0}
+.miCv ul.opciones{float:right}
+.miCv ul.opciones li{float:left;border-left:1px solid #b8b8b8; font-size:13px}
+.miCv ul.opciones li a{padding:4px 10px}
+.miCv ul.opciones li:first-child{border-left:none}
+.miCv ul.opciones i{margin-top:3px}
+
+/*Mi CV completo */
+.cvCompleto { background:#eee;padding: 15px}
+
+/* Mi CV datos */
+.miCv .colDatos{color:#666;margin-top: 31px; float:left; min-height:140px;max-width:280px}
+
+/*miCvExperienciaLaboral*/ 
+#experienciaForm .controls h4 { float: left}
+#experienciaForm a.deleteRef {float: left; margin: 9px 0 0 290px}
+#experienciaForm .controls.span6 { min-height:1px}
+
+/*Mis Datos personales*/
+.miCurriculum .colNombre .icon-pencil {margin-top:5px;margin-left: 5px}
+.miCv .datosCuenta{padding:16px 6px 16px 22px!important;background:#eee; border:0; box-shadow:none; position:relative}
+.miCurriculum .sexo label { font-weight:300; padding-top: 4px}
+.miCurriculum .inputDni { margin-bottom:0!important}
+.miCurriculum .inputDni .input-small{margin-right: 6px; width:140px}
+.miCurriculum p.sinPuntos{margin-left:152px;font-size: 11px;margin-bottom:0}
+.miCurriculum .formCV .nacimiento span{padding:0 4px}
+.miCurriculum .formCV .nacimiento span.rojo{padding:0}
+.miCurriculum .formCV .domicilio .span3 span { display:block}
+.miCurriculum .formCV .domicilio .calleInputs .span3{margin-bottom: 14px}
+.miCurriculum .formCV .domicilio .calleInputs .input-small { width:150px}
+.miCurriculum .formCV .domicilio .viviendaInputs .input-small { width:64px}
+.miCurriculum .formCV .domicilio .row-fluid.calleInputs .span3 {width: 36%}
+
+/* Informática */
+.miCurriculum .formCV.columnaIzq label, .miCurriculum .formCV.columnaIzq div.controls { margin-left:0}
+.miCurriculum #informaticaForm .row-fluid .span6 {width: 44.1%}
+
+/* Estudios */
+.miCurriculum .formCV #enCurso { margin-top:-1px; border:0!important}
+.miCurriculum #estudioForm .small {width: 41.5%;float: left;margin-left:0}
+.miCurriculum #estudioForm .small.last label, .miCurriculum #estudioForm .small.last .controls { margin-left:0} 
+
+/* Otros conocimientos */
+.miCurriculum #otroConocimientoItems .span10 .nivelItem span {word-wrap:break-word; display:block; width:700px}
+.miCv .conocimientoItem{;margin: 0 12px 0 0!important}
+.miCv .detalleItem{color: #666;margin-bottom: 20px}
+
+/* Preferencias laborales */
+.miCurriculum .btnControles {margin-top: 31px}
+.miCurriculum .btnControles button { margin-bottom:10px; width:100px}
+.miCurriculum #preferenciaLaboralForm select[multiple]{width:280px}
+.miCurriculum #preferenciaLaboralForm .row-fluid .control-label, .miCurriculum #preferenciaLaboralForm .multipleSelect { margin-left:0}
+.miCurriculum #preferenciaLaboralForm .row-fluid .control-label.prefLaborales { margin-left:150px}
+.miCurriculum #preferenciaLaboralForm .row-fluid .span6 {width: 34%}
+.miCurriculum #preferenciaLaboralForm .row-fluid .span4 span { margin-top: 10px;display: block}
+.miCurriculum .objetivos span {word-break: break-word; word-wrap: break-word}
+.miCurriculum .objetivos{margin-top: 16px}
+.miCurriculum .radioOpc>.radio{padding-top: 5px}
+.miCurriculum .cuerpoItem .row-fluid .span5:first-child {margin-left: 0}
+.miCurriculum .cuerpoItem .row-fluid [class*="span5"] {margin-left: 0;width: 49%}
+.miCurriculum div#columna1.span5 { margin-right:10px}
+
+/* Mi Cv online*/
+.miCvOnline { padding-top:25px}
+.miCvOnline .row-fluid { margin:0  auto; width:900px}
+.miCvOnline .row-fluid .span10 {width:100%}
+.miCvOnline .cuerpoItem .row-fluid .span10 {width:80%}
+
+/* Mis postulaciones */
+.misPostulaciones .dataTables_wrapper .dataTables_processing {position: absolute;top: 50%;width: 41.7%;height: 40px;text-align: center;background: rgba(51,51,51,0.5);font-size: 18px;border-radius: 5px;color: #fff;padding: 25px 0 10px;font-weight: 500}
+.misPostulaciones p { margin-bottom:15px}
+.misPostulaciones .tablaPostulaciones thead tr th { cursor: default}
+.misPostulaciones .tablaPostulaciones tr td{padding: 12px}
+.misPostulaciones .tablaPostulaciones :first-letter {text-transform:uppercase}
+.misPostulaciones #postulacionesTable_paginate {text-align: center}
+.misPostulaciones #postulacionesTable_paginate a { cursor:pointer; margin: 0 5px; display: inline-block; padding: 5px 10px;border-radius: 5px}
+.misPostulaciones #postulacionesTable_paginate a:hover {background-color: #eee!important; text-decoration:none}
+.misPostulaciones #postulacionesTable_paginate a.current {background-color: #d7e3fa}
+.misPostulaciones #postulacionesTable_paginate a.disabled {color:#b8b8b8}
+.misPostulaciones #postulacionesTable_paginate a.disabled:hover { text-decoration: none; cursor:default; background-color:#fff!important}
+
+/* Mis Cartas */
+.misCartas .tablaBoton{font-size:13px;margin-bottom: 10px}
+.misCartas .table td span{max-width:510px;float:left;display:block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis}
+.misCartas #cartasForm, .misCartas #divCartas { margin-top:25px}
+.misCartas .text-center{margin-bottom:25px}
+.misCartas .input-large, .misCartas #formContainer .input-large { width: 382px}
+.misCartas .cartasPresentacion thead tr th {padding-left: 7px} 
+.misCartas #formContainer span.rojo { float:right}
+.misCartas #formContainer .form-horizontal.formCartas .controls, .misCartas #formContainer .form-horizontal.formCartas label { margin-left:196px}
+ .misCartas #formContainer .form-horizontal.formCartas label.error { margin-left:0}
+.misCartas #formContainer span#charsMax {float: none;display: inline}
+.misCartas #formContainer .row-fluid .span9 {width: 81%}
+.misCartas #formContainer td[colspan="3"] { padding:0; background: #fff}
+.misCartas #formContainer td[colspan="3"] #cartasForm { margin-top:5px}
+.misCartas #formContainer td[colspan="3"] {background-color: #fff!important; border-bottom:1px solid #b8b8b8}
+.misCartas #divSinCartas {margin-top: 100px}
+
+/* Form comunes */
+.miCurriculum .formCV .control-label, .formCartas .control-label {width:auto; float: none;margin: 0 0 5px 150px;text-align: left}
+.miCurriculum .form-horizontal textarea, .formCartas textarea {width:398px;height:116px;resize: none; max-height: 350px}
+.miCurriculum .formCV .input-large {width:400px}
+.miCurriculum .form-horizontal .controls, .form-horizontal.formCartas  .controls {margin-left:150px}
+
+/* Registración */
+.registracion .subHead { margin-bottom:15px}
+.registracion label {margin: 0 0 5px}
+.registracion label.checkbox { font-size:13px;margin-top:5px}
+.registracion .form-horizontal .controls{margin-left:0!important}
+.registracion .captchaInput .captcha{float:left}
+.registracion .captchaInput input[type="text"]{float:left}
+.registracion .recaptchatable #recaptcha_image { margin-left:0}
+.registracion .captchaInput .text-right{width:210px;margin-top:8px}
+.registracion .recaptchatable #recaptcha_response_field { width:271px!important; margin-bottom:15px}
+.registracion .recaptchatable td img { display: inherit}
+.registracion .registro { margin-top:15px}
+.registracion #recaptcha_table td { background-color:#fff!important}
+#registracionForm .form-horizontal .aclaracion { margin-top:15px} 
+
+/* Login */
+.seguirConectado {font-size:12px; margin-top:10px!important}
+.seguirConectado [type="checkbox"] {margin-top:0; margin-right: 5px}
+.loguearsePlaca div.columna {float: left;width: 48%;overflow: hidden;margin-right: 2%}
+.loguearsePlaca div.columna.redesSociales p {width:320px; margin:39px auto!important}
+.loguearsePlaca p {margin-bottom:15px}
+.loguearsePlaca .row-fluid form { width:320px; margin:auto}
+.loguearsePlaca .form-horizontal .controls { margin-left:0}
+.loguearsePlaca .text-center {margin-bottom:20px}
+.fbLog, .googleLog { width:300px!important;border-radius: 5px;display: inline-block; font-weight:400; color: #fff; margin-bottom: 20px;padding: 3px 1px 10px}
+.fbLog:hover, .googleLog:hover { color: #fff; text-decoration: none; opacity:0.5}
+.fbLog i.icoSocial, .googleLog i.icoSocial {background: url("../img/sp_redesSociales.png") no-repeat;height: 22px;width: 22px;display: inline-block;margin: 0 10px;position: relative; top:6px}
+.fbLog i.icoSocial {background-position: -94px 0}
+.googleLog i.icoSocial {background-position: -116px 0}
+.fbLog { background-color:#1e3f7e}
+.googleLog { background-color:#8b3213}
+
+/* Recuperar/Resetear contraseña */
+.olvidoContrasenia .subHead { margin-bottom:15px}
+.reseteoContrasenia .form-horizontal .controls , .olvidoContrasenia .form-horizontal .controls{margin-left:0!important; margin-top:5px}
+.recuperarContrasenia i.alertaIcono {top:14px}
+.reseteoContrasenia label, .recuperarContrasenia label { margin-bottom:5px}
+.reseteoContrasenia .form-horizontal .aclaracion {margin-bottom:15px}
+.reseteoContrasenia .welcome p {margin-top:-15px;padding-bottom: 25px;margin-left: 40px}
+.emailOk .welcome.ok p {margin-left: 40px; width: 100%;padding-bottom: 25px}
+
+/* Notificación fixed*/
+.notificacionFixed {position: fixed;bottom: 0; background:#fff; width:100%; box-shadow: 0 0 7px #666; min-height:85px;z-index: 800}
+.notificacionFixed div.contenidoFixed {width:990px; margin:0 auto}
+.notificacionFixed div.contenidoFixed .cerrar {margin-top:10px}
+.notificacionFixed div.contenidoFixed div { width:760px; float:left;margin-top: 4px}
+.notificacionFixed div.contenidoFixed div h5:first-letter { text-transform: uppercase}
+.notificacionFixed div.contenidoFixed div h5 { font-size:18px; color:#1e3f7e}
+.notificacionFixed div.contenidoFixed div p strong {font-weight:400}
+.notificacionFixed div a.boton {float: right; margin-top: 10px;clear: right}
+.notificacionFixed div .notificacionTag {background:url("../img/tagNotificacion.png") no-repeat; font-size:13px; font-weight:400; color:#fff;padding: 7px 30px 22px 34px;position: relative;left: -46px;top: -16px}
+
+/* Print */
+@media print {
+    .contenidoHeaderSuperior, .contenidoHeaderInferior, .footer, .avisosSimilares, ul.opciones, div.divPostularme, .navegacion {display:none}
+}

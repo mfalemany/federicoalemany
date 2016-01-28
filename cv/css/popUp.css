@@ -1,0 +1,86 @@
+/* Popup General */
+div.blockUI.blockMsg.blockPage {top: 50px!important}
+div.modalBase {border: 1px solid #b8b8b8;border-radius: 5px;width: 490px;padding: 22px; background:#fff}
+div.modalBase h3 { margin-bottom:15px}
+div.modalBase .formBlock, div.modalBase #mensajeDiv { width: 80%; margin: 0 auto}
+div.modalBase .formBlock h5 { font-size:18px}
+div.modalBase label { margin-bottom:5px}
+div.modalBase input { margin-bottom:0}
+div.modalBase .formBlock .form-horizontal .controls, div.modalBase.login .form-horizontal .controls { margin-left:0}
+div.modalBase .text-center { margin:25px 0 15px}
+div.modalBase .contMensajeFormato { margin-bottom:25px}
+div.modalBase .cerrar {top: -11px;right: -11px}
+div.modalBase input.inputXL {width:333px}
+
+/* Mensaje  de ok */
+div.modalBase #mensajeDiv h4, div.modalBase .contMensaje.msjOk #spanMensaje h4 {color:#527535; margin-bottom:25px;margin-top: -21px}
+div.modalBase #mensajeDiv p { margin-left:35px}
+div.modalBase #mensajeDiv .icoOk {top:4px}
+div.modalBase .contMensaje.msjOk #spanMensaje {color:#1d3d02; font-size:16px}
+div.modalBase .contMensaje.msjOk #spanMensaje p { margin-top:25px}
+div.modalBase .contMensaje.msjOk .icoOk {top:4px}
+
+/* Alerta */
+div.modalBase .icoAlerta {top:7px}
+
+/* Descarga CV */
+div.modalBase .formBlock .inputfila { margin-top:15px; display: inline-block; width: 100%}
+div.modalBase .formBlock .inputfila label {width: 25%;float: left;margin-left: 76px}
+div.modalBase .formBlock .inputfila input[type="radio"] { margin-top: -3px}
+
+/* Mandar CV */
+div.modalBase .formBlock .cerrar {top: -10px;right: -55px}
+div.modalBase .formBlock #spanMensaje {margin-left: 30px;display: block;margin-top: -17px}
+
+/* Confidencialidad */
+#contenidoModificarConfidencialidad.modalBase label { margin-bottom:15px}
+#contenidoModificarConfidencialidad.modalBase input[type="radio"]{ margin-top:-2px; margin-right:5px}
+#contenidoModificarConfidencialidad.modalBase p { margin-bottom:15px}
+
+/* Eliminar experiencia */
+div.modalBase input.boton[title="No"], div.modalBase input.boton[value="Si"] { width:60px}
+
+/* Aceptar empresas */
+div.modalBase .formBlock ul.aceptarEmpresas { font-size:18px}
+div.modalBase .formBlock ul.aceptarEmpresas i.icon-ok {margin-top: 6px}
+
+/* contactenos */
+div.modalBase#popupContacto { padding-bottom:15px}
+div.modalBase#popupContacto p { margin-bottom:15px}
+div.modalBase#popupContacto .control-group {margin-bottom:5px}
+div.modalBase#popupContacto textarea {width: 333px; margin:0}
+div.modalBase#popupContacto textarea.error { display: inline}
+div.modalBase#popupContacto .text-center { margin:10px 0 5px}
+
+/* Cartas de presentacion */
+div.modalBase#popupCarta h5 { font-size:18px}
+
+/* Empresas habilitadas - Contactar empresa */
+#pedidoHabilitacionEmpresaPopUp i.icon-ok, #contactarEmpresa i.icon-ok {margin: 3px 5px 0}
+#pedidoHabilitacionEmpresaPopUp span, #contactarEmpresa span { display:block}
+#contactarEmpresa span strong {font-weight:500}
+
+/*Listados popup*/
+div.modalBase .boton {padding: 10px 12px}
+div.modalBase p { margin-bottom:25px}
+div.modalBase textarea {width: 90%;height: 100px;resize: none;margin-bottom: 0}
+
+/* Ver datos de empresa */
+div.modalBase #contactarEmpresa i.icon-ok {background: url("../img/sp_postulantes.png") no-repeat -116px -38px}
+
+/* Login */
+div.modalBase.login { width:650px;display: table}
+div.modalBase.login input[type="text"], div.modalBase.login input[type="password"] { width:260px}
+div.modalBase.login div.columna {float: left;width: 47%;overflow: hidden;margin-right: 1%;border-right:1px solid #b8b8b8}
+div.modalBase.login div.columna.redesSociales { border-right:0;margin-right:0; margin-left:1%;padding-left: 2%;margin-top: 25px}
+div.modalBase.login div.columna.redesSociales p { font-size:13px}
+div.modalBase.login div.columna.redesSociales .fbLog, .googleLog { margin-left:0!important; width:300px!important}
+
+/* Facetas */
+div#verMasOpciones.modalBase { width:600px}
+div#mostrarContenido { display:table}
+div#mostrarContenido ul li {width: 50%;float: left; font-size:12px;margin-bottom: 10px}
+div#mostrarContenido ul li a { font-weight:500}
+
+/*Scroll*/
+div.scrollPopUp {max-height: 390px;overflow-y: auto; overflow-x: hidden}
